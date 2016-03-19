@@ -1,14 +1,13 @@
 package homework;
 
-public class Pet <name, species> {
+public class Pet {
 	
+	String name;
+	String species;
 	
-	enum name {
-		Mark, Bim, Nika, Fishka;
-		
+	public Pet(String name, String species) {
+		this.name = name;
+		this.species = species;
 	}
-	enum species {
-		fish, dog, cat, hamster;
-	}
+	
 }
-
