@@ -6,26 +6,28 @@ public class Input {
 	/**
 	 * @author Yura
 	 */
-	
-	
+
 	/**
 	 * @author Ivan
 	 */
 
-	/*
-	 * вывод данных об участнике клуба,
-	 * вывод данных о его животных,
-	 * вывод данных о конкретном животном
+	/**
+	 * Display information about a member of the club to the console
 	 */
-
 	public void infoAboutClubMember() {
 
 	}
 
+	/**
+	 * Display information about a member's pets to the console
+	 */
 	public void infoAboutClubMembersPets() {
 
 	}
 
+	/**
+	 * Display information about a specific pet
+	 */
 	public void infoAboutPet() {
 
 	}
