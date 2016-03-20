@@ -92,16 +92,20 @@ public class Input {
 	public void infoAboutClubMembersPets(ClubMember name, Map<ClubMember, ArrayList<Pet>> zooclub) {
 		for (Map.Entry<ClubMember, ArrayList<Pet>> zoo : zooclub.entrySet()) {
 			if (zoo.getKey().equals(name)) {
-				System.out.println(zoo.getValue());
+				for (Pet pet : zoo.getValue()) {
+					infoAboutPet(pet);
+				}
 			}
 		}
 	}
 
 	/**
 	 * Display information about a specific pet
+	 * 
+	 * @param pet
 	 */
-	public void infoAboutPet() {
-
+	public void infoAboutPet(Pet pet) {
+		System.out.println(pet.name + " - is the name of the dog.");
+		System.out.println("And this dog breed is - " + pet.species);
 	}
-
 }
