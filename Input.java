@@ -15,7 +15,6 @@ public class Input {
 
 	/**
 	 * Display information about a member of the club to the console
-	 * 
 	 * @param name
 	 */
 	public void infoAboutClubMember(ClubMember name) {
@@ -24,13 +23,12 @@ public class Input {
 
 	/**
 	 * Display information about a member's pets to the console
-	 * 
 	 * @param name
 	 * @param zooclub
 	 */
 	public void infoAboutClubMembersPets(ClubMember name, Map<ClubMember, ArrayList<Pet>> zooclub) {
-		for (Map.Entry<ClubMember, ArrayList<Pet>> zoo : zooclub.entrySet()) {
-			if (zoo.getKey().equals(name)) {
+		for(Map.Entry<ClubMember, ArrayList<Pet>> zoo: zooclub.entrySet()) {
+			if(zoo.getKey().equals(name)) {
 				System.out.println(zoo.getValue());
 			}
 		}
